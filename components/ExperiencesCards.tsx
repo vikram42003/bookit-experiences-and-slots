@@ -33,7 +33,7 @@ const ExperienceCard = ({ card }: { card: ExperienceType }) => {
 };
 
 const ExperienceCards = async ({ query }: { query: string }) => {
-  const res = await fetch(API_URL + "/experiences");
+  const res = await fetch(API_URL + "/experiences", { next: { revalidate: 180 } });
   const cards: ExperienceType[] = await res.json();
 
   const filteredCards = cards.filter(
