@@ -18,3 +18,18 @@ export type TimeSlotType = {
   createdAt: string;
   updatedAt: string;
 };
+
+export type BookingType = {
+  id: string;
+  timeSlot: string;
+  experience: string;
+  userName: string;
+  userEmail: string;
+  quantity: number;
+  promoCode?: string;
+  finalPrice: number;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type CreateBookingType = Omit<BookingType, "id" | "createdAt" | "updatedAt">;

@@ -59,7 +59,7 @@ export default function ExperienceDetailPage({
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto py-4">
         <Link href="/" className="flex items-center gap-4 pb-4">
           <ArrowLeft className="h-4 w-4" />
@@ -197,7 +197,7 @@ export default function ExperienceDetailPage({
 
               <Button
                 className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold"
-                disabled={!selectedTimeSlot}
+                disabled={!selectedDate || !selectedTimeSlot}
                 onClick={() => {
                   if (selectedTimeSlot) {
                     router.push(
@@ -206,7 +206,7 @@ export default function ExperienceDetailPage({
                   }
                 }}
               >
-                {!selectedTimeSlot ? "Select a date and time slot" : "Confirm"}
+                {!selectedDate || !selectedTimeSlot ? "Select a date and time slot" : "Confirm"}
               </Button>
             </Card>
           </div>

@@ -1,12 +1,12 @@
 import ExperienceCards from "@/components/ExperiencesCards";
 
-const page = async ({
+export default async function RootPage({
   searchParams,
 }: {
   searchParams?: Promise<{
     q?: string;
   }>;
-}) => {
+}) {
   const query = (await searchParams)?.q || "";
 
   return (
@@ -14,6 +14,4 @@ const page = async ({
       <ExperienceCards query={query} />
     </main>
   );
-};
-
-export default page;
+}
