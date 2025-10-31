@@ -4,13 +4,10 @@ A modern fullstack booking platform for travel experiences built with **Next.js 
 
 This project was built as an internship screening assignment for Highway Delite
 
-The backend of the app is hosted at - https://bookit-backend-vke3.onrender.com
-Github repo for the frontend - https://github.com/vikram42003/bookit-experiences-and-slots
-
 ## Live
 
 - **Live App**: https://bookit-experiences-and-slots.vercel.app/
-- **Backend API**: https://bookit-backend-vke3.onrender.com/
+- **Backend API (Hosted on Render)**: https://bookit-backend-vke3.onrender.com/
 - **Backend GitHub Repo**: https://github.com/vikram42003/bookit-backend
 
 ## Tech Stack
