@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.layout-container {
+  @apply max-w-7xl mx-auto py-3 md:py-5;
+}
