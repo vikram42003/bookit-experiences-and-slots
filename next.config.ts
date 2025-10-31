@@ -6,14 +6,22 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: '**', // allow all https hosts
+        protocol: "https",
+        hostname: "**", // allow all https hosts
       },
       {
-        protocol: 'http',
-        hostname: '**', // allow all http hosts (optional)
+        protocol: "http",
+        hostname: "**", // allow all http hosts (optional)
       },
     ],
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/experiences",
+        destination: "/",
+      },
+    ];
   },
 };
 
