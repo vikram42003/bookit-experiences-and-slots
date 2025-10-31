@@ -29,7 +29,7 @@ const Searchbar = () => {
         name="q"
         defaultValue={searchParams.get("q") || ""}
         placeholder="Search experiences"
-        className="border px-2 py-1 rounded-md bg-gray-200 lg:min-w-[20vw]"
+        className="border px-3 py-1 rounded-md bg-gray-200 lg:min-w-[25vw]"
       />
       <button type="submit" className="bg-yellow-400 text-black px-4 py-2 rounded-md">
         Search
