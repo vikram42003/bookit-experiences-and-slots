@@ -2,8 +2,6 @@
 
 A modern fullstack booking platform for travel experiences built with **Next.js 15**, **TypeScript**, **TailwindCSS**, and **Shadcn**.
 
-This project was built as an internship screening assignment for Highway Delite
-
 ## Live
 
 - **Live App**: https://bookit-experiences-and-slots.vercel.app/
